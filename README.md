@@ -10,5 +10,4 @@ The dashboard includes:
 - bubble chart featuring all microbial species
 
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
-Please view the live file here: 
-
+Please view the live file here: [Visit the Site](https://<username>.github.io/<repository-name>/)
