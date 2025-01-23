@@ -14,3 +14,5 @@ The dataset reveals that a small handful of microbial species (also called opera
 Please view the live file here: https://mehdikhaku.github.io/belly-button-challenge/
 
 ## Instructions
+
+For detailed instructions, refer to the [Instructions PDF](instructions.pdf).
