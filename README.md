@@ -1,6 +1,6 @@
-**Belly Button Biodiversity**
+#**Belly Button Biodiversity**#
 
-<u>Module 14 Challenge</u>
+##<u>Module 14 Challenge</u>##
 
 The project aims to build an interactive dashboard to explore the Belly Button Diversity dataset (https://robdunnlab.com/projects/belly-button-biodiversity/) which catalogs the microbes colonizing human navels.
 
