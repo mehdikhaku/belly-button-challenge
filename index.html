@@ -5,13 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Belly Button Biodiversity</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    
 </head>
 
 <body>
+  <noscript>
+    <div class="alert alert-danger text-center">
+      <strong>JavaScript is required to view this dashboard. Please enable JavaScript in your browser settings.</strong>
+    </div>
+  </noscript>
 
   <div class="container">
+    <!-- Header Section -->
     <div class="row">
       <div class="col-md-12 p-5 text-center bg-light">
         <h1>Belly Button Biodiversity Dashboard</h1>
@@ -19,35 +32,44 @@
       </div>
     </div>
     <br>
+
+    <!-- Dropdown and Demographic Info Section -->
     <div class="row">
       <div class="col-md-3">
-        <div class="card card-body bg-light">
+        <!-- Dropdown Menu -->
+        <div class="card card-body bg-light mb-3">
           <h6>Test Subject ID Number:</h6>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <select id="selDataset" class="form-select" aria-label="Select Test Subject ID" onchange="optionChanged(this.value)"></select>
         </div>
-        <br>
-        <div class="card card-primary">
+        <!-- Demographic Info Panel -->
+        <div class="card card-primary bg-white">
           <div class="card-header">
             <h4 class="card-title">Demographic Info</h4>
           </div>
-          <div id="sample-metadata" class="card-body"></div>
+          <div id="sample-metadata" class="card-body">
+            <ul id="metadata-list" class="list-group list-group-flush"></ul>
+          </div>
         </div>
       </div>
-      <div class="col-md-9">
-        <div id="bar"></div>
+
+      <!-- Bar Chart -->
+      <div class="col-md-9 bg-white p-3">
+        <div id="bar" style="height:400px;"></div>
       </div>
     </div>
+
+    <!-- Bubble Chart Section -->
     <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
+      <div class="col-md-12 bg-white p-3 mt-3">
+        <div id="bubble" style="height:500px;"></div>
       </div>
     </div>
   </div>
 
+  <!-- JavaScript Libraries -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="./static/js/app.js"></script>
-
 </body>
 
 </html>

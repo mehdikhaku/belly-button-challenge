@@ -1,0 +1,21 @@
+/* General styles for the container and elements with white background */
+body {
+  background-color: #f8f9fa; /* Light Bootstrap-like background */
+}
+
+/* Metadata panel */
+#sample-metadata h6 {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Charts */
+#bar, #bubble {
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 90%;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
